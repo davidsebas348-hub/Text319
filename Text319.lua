@@ -4,15 +4,15 @@ local UserInputService = game:GetService("UserInputService")
 local Workspace = game:GetService("Workspace")
 
 -- 🔥 Configuración editable
-_G.FAKE_JUMP_POWER = _G.FAKE_JUMP_POWER or 70
+_G.FAKE_JUMP_POWER = _G.FAKE_JUMP_POWER or 60
 local MAX_DISTANCE = 15
 
 -- =========================
 -- TOGGLE REAL
 -- =========================
-if _G.BombJumpGUI then
-	_G.BombJumpGUI:Destroy()
-	_G.BombJumpGUI = nil
+if _G.BombJumpGUI2 then
+	_G.BombJumpGUI2:Destroy()
+	_G.BombJumpGUI2 = nil
 	return
 end
 
@@ -21,11 +21,11 @@ end
 -- =========================
 
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "BombJumpGUI"
+ScreenGui.Name = "BombJumpGUI2"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = game.CoreGui
 
-_G.BombJumpGUI = ScreenGui
+_G.BombJumpGUI2 = ScreenGui
 
 local Button = Instance.new("TextButton")
 Button.Size = UDim2.new(0,170,0,55)
